@@ -31,7 +31,9 @@ This setup has a number of advantages:
    [OpenPrescribing](https://github.com/ebmdatalab/openprescribing)
    application;
  * it's robust against temporary failures, so the embedded charts stay
-   up even if our application has issues.
+   up even if our application has issues;
+ * it has the nice side-effect of providing a full public history of
+   exactly what the embedded content was at any given point in time.
 
 Most importantly though, it degrades gracefully in the face of long-term
 failure: eventually we'll make changes to the site which mean this
