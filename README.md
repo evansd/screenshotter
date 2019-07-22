@@ -9,15 +9,16 @@ sites and online versions of papers.
 
 This repo contains:
 
- * `take-screenshot.js` which loads a particular webpage, screenshots a
-   specific element, and saves the image to the `docs/` directory;
+ * [take-screenshot.js](./take-screenshot.js) which loads a particular
+   webpage, screenshots a specific element, and saves the image to the
+   `docs/` directory;
 
- * `commit-and-push.sh` which commits any changes in the `docs/`
-   directory and pushes them back to Github (using a
+ * [commit-and-push.sh](./commit-and-push.sh) which commits any changes
+   in the `docs/` directory and pushes them back to Github (using a
    `GITHUB_PERSONAL_TOKEN` environment variable);
 
- * `circleci-config.yml` which runs the above two scripts as a CircleCI
-   Scheduled Job (a cron job, effectively)
+ * [circleci-config.yml](.circleci/config.yml) which runs the above two
+   scripts as a CircleCI Scheduled Job (a cron job, effectively)
 
 This results in "self-updating" screenshot images. As the images are in
 the `docs/` directory they can be served directly by Github using a
